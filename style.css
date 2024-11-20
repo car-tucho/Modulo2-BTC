@@ -1,0 +1,75 @@
+/*Selector uniuversal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Selector de tipo etiqueta*/
+
+body{
+    background-color: cornflowerblue;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: white
+    ;
+}
+/*Selector de tipo: clase*/
+.tarjeta {
+    width: 320px;
+    background-color: aqua;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: all 0.4s ease-in-out; /*Transición suave*/
+}
+
+.tarjeta:hover{
+    background-color: aquamarine;
+    transform: scale(1.07);
+    transform: rotate(3deg);
+}
+
+.tarjeta .caja-contenedora{
+    width: 200 px;
+}
+
+.tarjeta img{
+width: 100%;
+object-fit: cover;
+border-radius: 5%;
+
+}
+.tarjeta p{
+color: brown;
+font-size: 15px;
+}
+/*Selector de tipo: ID*/
+/*Es unico*/
+#gato{
+    color:blueviolet
+}
+
+#perro{
+    color:blue
+}
+
+#loro{
+    color:green
+}
+
+#foca{
+    color:red
+}
+
+#oso-panda{
+    color:brown
+}
