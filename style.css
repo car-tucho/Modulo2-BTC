@@ -2,54 +2,73 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+/*CSS que nos dio Google Fonts*/
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 /*Selector de tipo etiqueta*/
 
 body{
-    background-color: cornflowerblue;
+    background-color: rgb(194, 100, 237);
+    font-family: "Patrick Hand", cursive;
+    font-weight: 300;
+    font-style: normal;
 }
 main{
+    /*Ajustar las tarjetas a varias lineas*/
     display: flex;
     flex-wrap: wrap;
 }
 
 h1{
-    color: white
-    ;
+    color: #e0c423;
+    text-align: center;
 }
 /*Selector de tipo: clase*/
 .tarjeta {
     width: 320px;
-    background-color: aqua;
+    height: 335px;
+    background-color: rgb(121, 210, 252);
     border-radius: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
+    margin: 10px;
+    padding: 11px;
+    border: 3px solid blueviolet;
     transition: all 0.4s ease-in-out; /*Transición suave*/
 }
 
+.titulo-tarjeta{
+    margin-bottom: 12px;
+}
+/*Pseudoclase Hover para crear animaciones*/
 .tarjeta:hover{
-    background-color: aquamarine;
+    background-color: rgb(127, 161, 255);
     transform: scale(1.07);
     transform: rotate(3deg);
 }
 
 .tarjeta .caja-contenedora{
-    width: 200 px;
+    width: 200px;
 }
 
 .tarjeta img{
-width: 100%;
+width: 150px;
+height: 150px;
 object-fit: cover;
 border-radius: 5%;
 
 }
 .tarjeta p{
-color: brown;
+color: rgb(0, 0, 0);
 font-size: 15px;
 }
 /*Selector de tipo: ID*/
@@ -71,5 +90,5 @@ font-size: 15px;
 }
 
 #oso-panda{
-    color:brown
+    color:orangered
 }
