@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: blue;
 }
+
 
 /*CSS que nos dio Google Fonts*/
 .patrick-hand-regular {
@@ -28,6 +30,10 @@ main{
 h1{
     color: #e0c423;
     text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
 }
 /*Selector de tipo: clase*/
 .tarjeta {
@@ -91,4 +97,8 @@ font-size: 15px;
 
 #oso-panda{
     color:orangered
+}
+
+.parrafo{
+    color:blueviolet !important
 }
